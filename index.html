@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>World Flag Quiz</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>World Flag Quiz🌎</h1>
+    <form id="usernameForm">
+      <input type="text" id="inputField" name="inputField" placeholder="Username...">
+      <button id="submitUsernameBtn">Log in</button>
+    </form>
+    <button id="startBtn">Start</button>
+    <div id="changeUserContainer">
+        <button id="changeUserBtn">Change User</button>
+    </div>
+    <div id="loadingContainer"></div>
+    <div id="questionNumberContainer"></div>
+    <div id="questionContainer">
+      <h2 id="questionNumber"></h2>
+    </div>
+    <div id="answerContainer">
+        <div id="option1" class="option">Option 1</div>
+        <div id="option2" class="option">Option 2</div>
+        <div id="option3" class="option">Option 3</div>
+        <div id="option4" class="option">Option 4</div>
+    </div>
+    <div id="resultContainer"></div>
+    <div id="bonusContainer"></div>
+    <div id="scoreContainer"></div>
+    <div id="endGameOptionsContainer"></div>
+    <button id="incorrectAnswersBtn">View Incorrect Answers</button>
+    <div id="viewIncorrectAnswersContainer"></div>
+    <button id="viewLeaderboardBtn">View Leaderboard</button>
+    <div id="leaderboardContainer"></div>
+  </div>
+  <script src="app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+/* General styling */
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ebebe8;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Styling for the start button */
+  
+  
+  #startBtn:hover {
+    background-color: rgb(159, 145, 223);
+  }
+  
+  /* Styling for question and answer containers */
+  #questionContainer {
+    display: none;
+    margin-bottom: 20px;
+    min-width: 30rem;
+    min-height: 13rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  
+  #answerContainer{
+    display: none;
+    min-width: 30rem;
+    gap: 15px;
+  }
+  /* Styling for the question number and score containers */
+  #questionNumberContainer,
+  #scoreContainer,
+  #bonusContainer, #changeUserContainer {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 10px;
+  }
+  
+  #correctMessage{
+    font-size:xx-large;
+    color: rgb(0, 195, 32);
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  #incorrectMessage{
+    font-size:xx-large;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Styling for the options/buttons */
+  #option1,#option2,#option3,#option4 {
+    background-color: #00ff99;
+    display: block;
+   min-width: 10rem;
+   max-width: 10rem;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+  }
+  
+  #option1:hover,#option2:hover,#option3:hover,#option4:hover {
+    background-color: #ddff00;
+  }
+  
+  /* Styling for the flag image */
+  #flag {
+    max-width: 20rem;
+    min-width:20rem;
+    min-height: 10rem;
+    max-height: 10rem;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for all buttons */
+  #submitUsernameBtn, #startBtn, #viewLeaderboardBtn, #incorrectAnswersBtn, #changeUserBtn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #00b6fe;
+    cursor: pointer;
+    outline: none;
+    font-size: large;
+    transition: background-color 0.3s;
+  max-width: fit-content;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+    
+  }
+  
+  #submitUsernameBtn:hover, #startBtn:hover, #viewLeaderboardBtn:hover, #incorrectAnswersBtn:hover, #changeUserBtn:hover{
+    background-color: rgb(0, 255, 47);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+  
+  /* Hover effect for buttons */
+  button:hover {
+    background-color: #9c78ae;
+  }
+  
+  #loadingMessage{
+    font-size:20px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  
+  #endGameOptionsContainer{
+    display: flex;
+  }
+
+  #leaderboard{
+    font-weight: bold;
+    font-size: large;
+  }
+
+  #incorrectCountriesList{
+    display: flex;
+  }
+
+#viewIncorrectAnswersContainer{
+    max-width: 72rem;
+    display: flex;
+    gap: 2rem;
+    margin: 0.5rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom:1.5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+#viewIncorrectAnswersContainer img
+{
+    max-width: 10rem;
+    min-width:10rem;
+    min-height: 6rem;
+    max-height: 6rem;
+}
+
+#incorrectCountriesList{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+}
+
+#incorrectAnswersBtn {
+  display: none;
+}
+
